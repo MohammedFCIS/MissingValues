@@ -27,3 +27,9 @@ titanic$boat = ifelse(titanic$boat == '', 'NA', titanic$boat)
 ####################################
 #4: Cabin
 ####################################
+titanic$has_cabin_number = ifelse(titanic$cabin == '', 0,1)
+
+####################################
+#4: Save Cleaned Data
+####################################
+write.csv(titanic, 'data/titanic_cleaned.csv')
