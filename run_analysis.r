@@ -20,6 +20,10 @@ titanic$embarked = ifelse(titanic$embarked == '', 'S', titanic$embarked)
 titanic$age = ifelse(is.na(titanic$age), mean(titanic$age, na.rm = TRUE), titanic$age) 
 
 ####################################
-#2: Lifeboat
+#3: Lifeboat
 ####################################
 titanic$boat = ifelse(titanic$boat == '', 'NA', titanic$boat)
+
+####################################
+#4: Cabin
+####################################
